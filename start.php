@@ -22,11 +22,11 @@
 		
 		// Set up menu for logged in users
 		if (isloggedin()) {
-			add_menu(elgg_echo('groupblogs'), $CONFIG->wwwroot . "pg/groupblog/owned/" . $_SESSION['user']->username);
+		  //add_menu(elgg_echo('groupblogs'), $CONFIG->wwwroot . "pg/groupblog/owned/" . $_SESSION['user']->username);
 
 		// And for logged out users
 		} else {
-			add_menu(elgg_echo('groupblog'), $CONFIG->wwwroot . "pg/groupblog/",array());
+		  //add_menu(elgg_echo('groupblog'), $CONFIG->wwwroot . "pg/groupblog/",array());
 		}
 		
 		// Extend system CSS with our own styles, which are defined in the blog/css view
