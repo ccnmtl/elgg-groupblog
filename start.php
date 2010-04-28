@@ -61,8 +61,8 @@
 			
 		}
 		if(get_context() == 'groupblog') {
-			if(isloggedin()) add_submenu_item(elgg_echo("groupblog:your"), $CONFIG->wwwroot . "pg/groupblog/owned/" . $_SESSION['user']->username);
-			add_submenu_item(elgg_echo("groupblog:everyone"), $CONFIG->wwwroot . "pg/groupblog/");
+		  //if(isloggedin()) add_submenu_item(elgg_echo("groupblog:your"), $CONFIG->wwwroot . "pg/groupblog/owned/" . $_SESSION['user']->username);
+		  //add_submenu_item(elgg_echo("groupblog:everyone"), $CONFIG->wwwroot . "pg/groupblog/");
 			if(isloggedin()) add_submenu_item(elgg_echo("groupblog:new"), $CONFIG->wwwroot . "pg/groupblog/new/" . $page_owner->username,'pagesactions');
 				
 		}
